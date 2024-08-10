@@ -5,7 +5,6 @@ import streamlit as st
 st.title("🌀 Word Twister")
 st.write("🪢 Word Twister solves anagrams of any english word passed in,by generating anagrams of that word with varied lengths.The threshold parameter signifies the accuracy of words that are used as anagrams.I recommend that you use a threshold of .5 and above.")
 col1, col2 = st.columns([.1, .2], gap="small")
-# st.html("<a href='https://google.com'>Hello, World</a>")
 
 temp_word = None
 
