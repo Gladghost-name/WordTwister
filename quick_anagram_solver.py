@@ -5,7 +5,7 @@ import string
 alphabets = string.ascii_lowercase
 
 # loading all the words as text from the dictionary (A less optimized method)
-f = open("WordTwister/updated_words.txt", "r+")
+f = open("updated_words.txt", "r+")
 content = f.read().splitlines() # splitting into individual words.
 
 def generate_coefficent(target_word, word):
