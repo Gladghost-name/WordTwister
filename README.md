@@ -1,3 +1,3 @@
-# MVN
-Modulize Vector Network
-##### A Machine learning algorithm that works by modulizing and shifting similar vectors towards each other.
+# Word Twister
+Generate Anagrams of a word.
+##### A Flexible Anagram solver of words of different lengths
