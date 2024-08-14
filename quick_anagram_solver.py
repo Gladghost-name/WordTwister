@@ -5,8 +5,24 @@ import string
 alphabets = string.ascii_lowercase
 
 # loading all the words as text from the dictionary (A less optimized method)
-f = open("updated_words.txt", "r+")
+global f
+f = open("Vocabularies/eng_200k-words.txt", "r+")
+global content
 content = f.read().splitlines() # splitting into individual words.
+
+def set_vocabs(vocab_type):
+    global content
+    global f
+    f.close()
+    if vocab_type == "300k English Words":
+        f = open("Vocabularies/eng_300k-words.txt", "r+")
+        content = f.read().splitlines()
+    elif vocab_type == "200k English Words":
+        f = open("Vocabularies/eng_200k-words.txt", "r+")
+        content = f.read().splitlines()
+    elif vocab_type == "100k French Words":
+        f = open("Vocabularies/fra_100k-words.txt", "r+")
+        content = f.read().splitlines()
 
 def generate_coefficent(target_word, word):
     target_mapping = 0
